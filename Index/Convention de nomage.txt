@@ -1,0 +1,2 @@
+font-family: 'Alatsi', sans-serif;
+font-family: 'PT Sans', sans-serif;

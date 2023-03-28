@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Alatsi&family=PT+Sans:wght@400;700&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <a href="https://nicepage.com/html-templates/preview/mobile-app-development-portfolio-346594?device=desktop"
+                class="logo">
+                <img src="../img/logo.png" alt="logo">
+            </a>
+            <ion-icon name="menu-outline" class="menuBtn"></ion-icon>
+        </nav>
+        <div class="sidebar">
+            <ul>
+                <li><a href="../Index/index.html" class="sidebarLinks">Home</a></li>
+                <li><a href="../contact/contact.html" class="sidebarLinks">Contact</a></li>
+            </ul>
+            <button class="closeBtn">X</button>
+        </div>
+        <div class="overlay"></div>
+    </header>
+
+    <!-- form -->
+    <div class="full">
+        <H1>Me contacter</H1>
+        <div class="global">
+            <form action="#" method="post">
+                
+                    <p>* champs obligatoires</p>
+                    <br>
+                    <br>
+                    <div class="NP">
+                        <div class="Nom">
+                            <label for="nom">Nom *</label>
+                            <input type="text" placeholder="Nom" required name="nom" minlength="3" maxlength="25"
+                                id="nomid">
+                        </div>
+                        <div class="Prenom">
+                            <label for="prenom">Prénom *</label>
+                            <input type="text" placeholder="Prénom" required name="prenom" minlength="3" maxlength="25" id="prenomid">
+                        </div>
+                    </div>
+                    <ion-icon name="person-circle-outline" class="secondNameIcon"></ion-icon>
+                    <ion-icon name="person-circle-outline" class="firstNameIcon"></ion-icon>
+                    <div class="infoen">
+                        <div class="entreprise">
+                            <label for="Entreprise">Entreprise</label>
+                            <input type="text" placeholder="Entreprise" minlength="3" maxlength="25" id="entrepriseid">
+                        </div>
+                        <ion-icon name="business-outline" class="entrepriseIcon"></ion-icon>
+                        <span class="entreprisen">
+                            <label for="employes">Nombre d'employés</label>
+                            <select name="option_select" id="selectoptionid">
+                                <option disabled>----------------------</option>
+                                <option value="entre 1 et 10">1-10</option>
+                                <option value="entre 11 et 20">11-20</option>
+                                <option value="entre 21 et 50">21-50</option>
+                                <option value="entre 51 et 100">51-100</option>
+                            </select>
+                        </span>
+                        <span class="type_entreprise">
+                            <label for="type_entreprise">Type d'entreprise</label>
+                            <select name="type_entreprise" id="typeentrepriseid">
+                                <option disabled>----------------------</option>
+                                <option value="SAS">SAS</option>
+                                <option value="EURL">EURL</option>
+                                <option value="SASU">SASU</option>
+                                <option value="SARL">SARL</option>
+                            </select>
+                        </span>
+                    </div>
+                    <div class="coordonees">
+                        <span class="telephone">
+                            <label for="telephone">Numéro de téléphone*</label>
+                            <input type="tel" placeholder="(+33)6 00 00 00 00" required name="telephone" minlength="10"
+                                maxlength="17" id="telephoneid">
+                        </span>
+                        <ion-icon name="call-outline" class="phoneIcon"></ion-icon>
+                        <span class="email">
+                            <label for="email">Email *</label>
+                            <input type="mail" placeholder="Email" name="email" required minlength="15" maxlength="40"
+                                id="emailid">
+                        </span>
+                        <ion-icon name="mail-outline" class="mailIcon"></ion-icon>
+                    </div>
+                    <label for="">Objet *</label>
+                    <div class="radiop">
+                        <div class="radiopro">
+                            <input type="radio" required name="Objets" class="radio" id="professionnelid">
+                            <label for="professionnel" class="radio">Requête professionnelle</label>
+                        </div>
+                        <div class="radioperso">
+                            <input type="radio" class="radio" required name="Objets" id="personnelid">
+                            <label for="personnel" class="radio">Requête personnelle</label>
+                        </div>
+                    </div>
+                    <div class="message">
+                        <label for="message">Message</label>
+                        <textarea id="message" name="message" rows="30" cols="60" autocomplete="off" maxlength="800">
+        </textarea>
+                    </div>
+                    <div class="coche">
+                        <input type="checkbox" class="check" id="newsletterid">
+                        <label for="newsletter" class="cocher_texte">Abonnez-vous à nos newsletter</label>
+                    </div>
+        </div>
+        <div class="boutons">
+            <span class="Remove">
+                <input type="reset" value="Effacer" class="bouton">
+            </span>
+            <span class="Send">
+                <input type="submit" value="Envoyer" class="bouton" onclick="recap()">
+            </span>
+        </div>
+        </form>
+    </div>
+
+    <footer>
+        <p class="footerContent">Sample text. Click to select the text box. Click again or double click to start editing
+            the text.</p>
+        <div class="footerEndContent">
+            <a href="https://nicepage.com/website-templates" target="_blank" class="footerLinks">Website Templates</a>
+            <p class="footerLinks">created with</p>
+            <a href="https://nicepage.com" target="_blank" class="footerLinks">Website Builder Software.</a>
+        </div>
+    </footer>
+</body>
+
+<script src="script.js"></script>
+<script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+<script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+</body>
+
+</html>
