@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./asset/css/contact.css">
+</head>
+
+<body class="body">
+    <header>
+        <a href="index.html">
+            <img src="./asset/img/logo.png" alt="Logo">
+        </a>
+        <nav class="navList" id="navList" data-visible="false">
+            <div class="cross" id="cross"><span class="crossBar"></span><span class="crossBar"></span></div>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="#">Contact</a></li>
+            </ul>
+        </nav>
+        <div class="burger" aria-controls="navList" aria-expanded="false">
+            <span class="bar"></span><span class="bar"></span><span class="bar"></span>
+        </div>
+        <div class="overlay" id="overlay"></div>
+    </header>
+    <main>
+        <h1>Contact us</h1>
+        <div class="formContainer">
+            <form action="">
+                <div class="formItem">
+                    <input pattern="^[a-zA-ZÀ-ÿ -]*$" type="text" minlength="3" maxlength="15" placeholder="First name"
+                        required>
+                    <label>First name</label>
+                </div>
+                <div class="formItem">
+                    <input pattern="^[a-zA-ZÀ-ÿ -]*$" type="text" minlength="3" maxlength="15" placeholder="Second name"
+                        required>
+                    <label>Second name</label>
+                </div>
+                <div class="formItem">
+                    <input pattern="[A-Za-z0-9._+-]+@[A-Za-z0-9 -]+\.[a-z]{2,}" type="email"
+                        placeholder="user@gmail.com" required>
+                    <label>Email</label>
+                </div>
+                <div class="formItem">
+                    <input pattern="^(0|\+33|0033)[1-9](\d{2}){4}$" type="number" minlength="10" maxlength="17"
+                        placeholder="0600000000">
+                    <label>Phone number</label>
+                </div>
+                <div class="formItem"><textarea name="" id="" cols="30" rows="10" placeholder="Message..."
+                        required></textarea>
+                </div>
+                <div class="checkboxContainer">
+                    <input type="checkbox" class="checkboxInput" id="checkbox">
+                    <label for="checkbox" class="checkboxLabel">Subscribe to my newsletter</label>
+                </div>
+                <button type="submit">Submit</button>
+            </form>
+        </div>
+    </main>
+    <footer>
+        <div class="footerContent">
+            <p>Sample text. Click to select the text box. Click again or double click to start editing the text.
+            </p>
+        </div>
+        <div class="footerLinks">
+            <p><a href="#">Website Templates</a> created with <a href="#">Website Builder Software</a></p>
+        </div>
+    </footer>
+    <script src="./asset/js/script.js"></script>
+</body>
+
+</html>
